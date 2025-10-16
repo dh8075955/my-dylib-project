@@ -1,3 +1,4 @@
+Code Useless Aimsilent/LockCamera FreeFireMax V2.113.1 
 void NoRecoil(void* instance, Vector3* recoilVec, float a1, float a2) {
     if (!Vars.SilentAim  !Vars.Enable) return;
     recoilVec->x = 0;
@@ -84,5 +85,7 @@ Unhook(noRecoilAddr);
 
 
 AutoHookSilentFire() //at get players
+
+ImGui::Checkbox(oxorany("SilentAim"), &Vars.SilentAim);
 
 ImGui::Checkbox(oxorany("SilentAim"), &Vars.SilentAim);
